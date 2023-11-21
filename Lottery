@@ -1,0 +1,90 @@
+Lottery Code
+from random import randint 
+
+part1 = input("Ingrese Nombre del primer participante: ")
+part2 = input("Ingrese Nombre del segundo participante: ")
+part3 = input("Ingrese Nombre del tercer participante: ")
+part4 = input("Ingrese Nombre del cuarto participante: ")
+part5 = input("Ingrese Nombre del quinto participante: ")
+
+primer_premio = randint(1,5)
+
+if primer_premio == 1:
+    print("Ganó", part1)
+    ganador_nombre = part1
+elif primer_premio == 2:
+    print("Ganó", part2)
+    ganador_nombre = part2
+elif primer_premio == 3:
+    print("Ganó", part3)
+    ganador_nombre = part3
+elif primer_premio == 4:
+    print("Ganó", part4)
+    ganador_nombre = part4
+elif primer_premio == 5:
+    print("Ganó", part5)
+    ganador_nombre = part5
+   
+print("Felicitaciones capoooo ", ganador_nombre ,"  !!!")
+
+# Segundo Premio
+
+segundo_premio = randint(1,5)
+ganador2_nombre = ""
+
+if primer_premio == segundo_premio:
+    segundo_premio = randint(1,5)
+    if primer_premio == segundo_premio:
+        segundo_premio = randint(1,5)
+        if primer_premio != segundo_premio:
+            if segundo_premio == 1:
+                print("Ganó", part1)
+                ganador2_nombre = part1
+            elif segundo_premio == 2:
+                print("Ganó", part2)
+                ganador2_nombre = part2
+            elif segundo_premio == 3:
+                print("Ganó", part3)
+                ganador2_nombre = part3
+            elif segundo_premio == 4:
+                print("Ganó", part4)
+                ganador2_nombre = part4
+            elif segundo_premio == 5:
+                print("Ganó", part5)
+                ganador2_nombre = part5
+        else:
+            print("Increiblemente salió sorteado 3 veces el mismo participante")
+    else:
+        if segundo_premio == 1:
+            print("Ganó", part1)
+            ganador2_nombre = part1
+        elif segundo_premio == 2:
+            print("Ganó", part2)
+            ganador2_nombre = part2
+        elif segundo_premio == 3:
+            print("Ganó", part3)
+            ganador2_nombre = part3
+        elif segundo_premio == 4:
+            print("Ganó", part4)
+            ganador2_nombre = part4
+        elif segundo_premio == 5:
+            print("Ganó", part5)
+            ganador2_nombre = part5
+else:
+    if segundo_premio == 1:
+        print("Ganó", part1)
+        ganador2_nombre = part1
+    elif segundo_premio == 2:
+        print("Ganó", part2)
+        ganador2_nombre = part2
+    elif segundo_premio == 3:
+        print("Ganó", part3)
+        ganador2_nombre = part3
+    elif segundo_premio == 4:
+        print("Ganó", part4)
+        ganador2_nombre = part4
+    elif segundo_premio == 5:
+        print("Ganó", part5)
+        ganador2_nombre = part5
+       
+print("Felicitaciones Segundo premio ", ganador2_nombre ,"  !!!")
